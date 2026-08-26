@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Raksha Bandhan ❤️</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="hearts"></div>
+
+  <!-- Opening Screen -->
+  <section id="home" class="screen">
+    <div class="card">
+
+      <div class="rakhi">🪢</div>
+
+      <h1>Happy Raksha Bandhan ❤️</h1>
+
+      <p class="subtitle">
+        A Special Digital Gift For My Special Sister ✨
+      </p>
+
+      <input
+        type="text"
+        id="sisterName"
+        placeholder="तुझ्या बहिणीचं नाव लिहा..."
+        maxlength="30"
+      >
+
+      <button onclick="startGift()">
+        Open Your Gift 🎁
+      </button>
+
+    </div>
+  </section>
+
+
+  <!-- Gift Screen -->
+  <section id="giftPage" class="screen hidden">
+
+    <div class="gift-container">
+
+      <div class="small-title">
+        🪢 A Special Gift For You 🪢
+      </div>
+
+      <h1 id="welcomeText"></h1>
+
+      <p class="love-text">
+        माझ्या आयुष्यातील सर्वात खास व्यक्तींपैकी<br>
+        एक असलेल्या माझ्या बहिणीसाठी... ❤️
+      </p>
+
+
+      <!-- Gift Box -->
+      <div id="giftBox" class="gift-box" onclick="openGift()">
+
+        <div class="gift-lid"></div>
+
+        <div class="gift-body">
+          <div class="ribbon vertical"></div>
+          <div class="ribbon horizontal"></div>
+        </div>
+
+        <div class="gift-bow">
+          🎀
+        </div>
+
+      </div>
+
+      <p id="tapText">
+        🎁 Gift वर Tap करा
+      </p>
+
+
+      <!-- Message -->
+      <div id="message" class="message hidden">
+
+        <div class="photo-frame">
+          <div class="photo-placeholder">
+            📸
+          </div>
+        </div>
+
+        <h2 id="sisterHeading"></h2>
+
+        <p>
+          प्रिय बहिणी, ❤️
+        </p>
+
+        <p>
+          आयुष्यात कितीही भांडणं झाली,
+          कितीही वेळा एकमेकांना त्रास दिला,
+          तरी तू माझ्यासाठी नेहमीच खास राहशील. 🥰
+        </p>
+
+        <p>
+          माझ्या प्रत्येक सुख-दुःखात माझ्यासोबत
+          राहिल्याबद्दल Thank You! 💕
+        </p>
+
+        <p>
+          आपल्या नात्यात नेहमी प्रेम,
+          आनंद आणि हसण्याचे क्षण असू देत. ✨
+        </p>
+
+        <div class="rakhi-big">
+          🪢
+        </div>
+
+        <h2>
+          Happy Raksha Bandhan! ❤️
+        </h2>
+
+        <p class="signature">
+          — तुझा भाऊ ❤️
+        </p>
+
+        <button onclick="restart()">
+          🔄 पुन्हा पाहा
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
